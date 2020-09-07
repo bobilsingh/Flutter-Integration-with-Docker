@@ -11,7 +11,7 @@ class _DockerFileState extends State<DockerFile> {
   var mydata;
 
   myWeb(cmd) async {
-    var url = 'http://13.233.111.44/cgi-bin/web.py?x=$cmd';
+    var url = 'http://00.000.000.00/cgi-bin/web.py?x=$cmd';
     var result = await http.get(url);
     setState(() {
       mydata = result.body;
